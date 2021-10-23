@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="./bibtexParseJs/bibtexParse.js"></script>
+    <script src="./js/bibtex.js"></script>
+    <script src="./js/json.js"></script>
+    <title>Masayuki Fukumitsu</title>
+</head>
+<body style="padding-top: 5rem">
+    <script>
+        const id_list = ["peer_reviewed", "non_peer_reviewed"]
+
+        for (const id of id_list) {
+            bibTexToLi(id)
+        }
+
+        JSONtoLi("courses", formCourseLi)
+        JSONtoLi("awards", formAwardLi)
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Masayuki Fukumitsu</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publication">Publication</a></li>
+                <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="border-bottom" id="profile">Profile</h2>
+        <p>
+            <table>
+                <tbody>
+                    <tr><th>氏名</th><td>福光 正幸 (Fukumitsu, Masayuki)</td></tr>
+                    <tr><th>出身</th><td>宮城県仙台市</td></tr>
+                </tbody>
+            </table>
+        </p>
+
+        <h3>Biography</h3>
+        <p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>2009.3</td>
+                        <td>岩手県立大学 ソフトウェア情報学部ソフトウェア情報学科 卒業, 学士（ソフトウェア情報学）</td>
+                    </tr>
+                    <tr>
+                        <td>2011.3</td>
+                        <td>東北大学 大学院情報科学研究科 情報基礎科学専攻 博士課程前期2年の課程 修了, 修士（情報科学）</td>
+                    </tr>
+                    <tr>
+                        <td>2014.3</td>
+                        <td>東北大学 大学院情報科学研究科 情報基礎科学専攻 博士課程後期3年の課程 修了, 博士（情報科学）</td>
+                    </tr>
+                    <tr>
+                        <td>2014.4-2018.3</td>
+                        <td>北海道情報大学 情報メディア学部 情報メディア学科（講師）</td>
+                    </tr>
+                    <tr>
+                        <td>2015.4-2018.3</td>
+                        <td>北海道情報大学 大学院経営情報学研究科（講師）</td>
+                    </tr>
+                    <tr>
+                        <td>2018.4-</td>
+                        <td>北海道情報大学 情報メディア学部情報メディア学科/大学院経営情報学研究科（准教授）</td>
+                    </tr>
+                    <tr>
+                        <td>2021.4-</td>
+                        <td>北海道大学 （非常勤講師）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+
+        <h3>Research Interests</h3>
+        <p>
+            <ul>
+                <li>暗号理論, 特にディジタル署名, 安全性証明可能性 (Cryptography, especially Digital Signatures and Provable Security)</li>
+                <li>情報セキュリティ</li>
+            </ul>
+        </p>
+
+        <h2 class="border-bottom" id="education">Education</h2>
+        <p>
+            <ul id="courses"></ul>
+        </p>
+
+        <h2 class="border-bottom" id="publication">Publication</h2>
+        <h3>Peer-Reviewed Papers</h3>
+        <p>
+            <ol id="peer_reviewed"></ol>
+            <a class="btn btn-link" data-bs-toggle="collapse" data-bs-target=".peer_reviewed-more-collapse" aria-expanded="false">More...</a>
+        </p>
+        <h3>Non-Peer-Reviewed Papers</h3>
+        <p>
+            <ol id="non_peer_reviewed"></ol>
+            <a class="btn btn-link" data-bs-toggle="collapse" data-bs-target=".non_peer_reviewed-more-collapse" aria-expanded="false">More...</a>
+        </p>
+
+        <h2 class="border-bottom">Awards</h2>
+        <p>
+            <ul id="awards"> </ul>
+        </p>
+
+        <h2 class="border-bottom" id="links">Links</h2>
+        <p>
+            <ul>
+                <li><a href="https://researchmap.jp/masayuki_fukumitsu" target="_blank">researchmap</a></li>
+                <li><a href="https://dblp.org/pid/34/8102.html" target="_blank">DBLP</a></li>
+                <li><a href="https://orcid.org/0000-0001-7471-4477">ORCID</a></li>
+            </ul>    
+        </p>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
