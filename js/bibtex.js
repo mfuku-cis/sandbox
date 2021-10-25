@@ -45,6 +45,7 @@ const bibTexToLi = (id) => {
                     if ("volume" in content) { others.push(content.volume) }
                     if ("pages" in content) { others.push(`pp.${content.pages}`) }
                     others.push(content.year)
+                    if ("note" in content) { others.push(`(${content.note})`)}
                     bib_item.textContent = `${content.author.join(", ")}, "${content.title}," ${others.join(", ")}.`
                     break;
                 case "article":
