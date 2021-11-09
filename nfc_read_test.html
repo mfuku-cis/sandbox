@@ -16,7 +16,7 @@
         read.addEventListener("click", async () => {
             result.textContent = await "reading ..."
             try {
-                const reader = NDEFReader()
+                const reader = new NDEFReader()
                 await reader.scan()
 
                 reader.addEventListener("error", () => { result.textContent = "Error"})
