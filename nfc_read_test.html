@@ -19,7 +19,7 @@
                 const reader = new NDEFReader()
                 await reader.scan()
 
-                reader.addEventListener("error", () => { result.textContent = "Error"})
+                reader.addEventListener("error", (event) => { result.textContent = event})
                 reader.addEventListener("reading", ({ message, serialNumber }) => {
                     result.textContent = message
                 })
