@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC TEST</title>
+</head>
+<body>
+    <button id="read">Read</button>
+    <div id="result"></div>
+    <script>
+        // ref: https://zenn.dev/ktpi2000/articles/webnfc-playground
+        const read = document.getElementById("read")
+        const result = document.getElementById("result")
+        read.addEventListener("click", async () => {
+            result.textContent = await "reading ..."
+            try {
+                const reader = NDEFReader()
+                await reader.scan()
+
+                reader.addEventListener("error", () => { result.textContent = "Error"})
+                reader.addEventListener("reading", ({ message, serialNumber }) => {
+                    result.textContent = message
+                })
+            } catch (error) {
+                result.textContent = error   
+            }
+        })
+    </script>
+</body>
+</html>
