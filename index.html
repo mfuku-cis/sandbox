@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./prof.css">
+
+    <title>SUN FukuLab</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">SUN FukuLab</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./prof.html">Profile</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>FukuLab</h1>
+                <h2 class="border-bottom" id="about">About FukuLab</h2>
+                <p>
+                    FukuLab (福光研究室) は2022年度情報セキュリティ学科に開設された新しい
+                    研究室です.
+                    次のテーマを主な研究テーマとしています.
+                    <ol>
+                        <li>新たな暗号方式の開発</li>
+                        <li>暗号方式を基にした新たなアプリケーションの開発</li>
+                        <li>暗号方式の理論的安全性証明</li>
+                    </ol>
+                </p>
+
+                <h2 class="border-bottom" id="about">新たな暗号方式の開発</h2>
+                <p>
+                    暗号方式というと, 秘密のデータを第三者に知られないよう秘匿化するものや, ディジタル署名のように「誰がこのデータを作成したか」を保証するための技術などが思い当たると思いますが.
+                    現在は, それに加え暗号化したまま統計処理ができたり,
+                    複数人のメンバーが作成データを保証する署名などの+αの方式が開発されていたりします.
+                    FukuLabでは, 従来の暗号・署名+αの技術（これらを高機能暗号・署名という）を開発します.
+                </p>
+                <p>
+                    ちなみに, これまでにマルチ署名やグループ署名の開発を行ってきました.
+                </p>
+
+                <h2 class="border-bottom" id="about">暗号方式を基にした新たなアプリケーションの開発</h2>
+                <p>
+                    暗号をベースとしてアプリケーションは世の中にたくさんあります.
+                    これまでに,
+                    <ol>
+                        <li>FIDOの端末追加プロトコルの開発</li>
+                        <li>パスワードを安全に分散して管理するパスワードマネージャに関する研究開発</li>
+                        <li>ブロックチェーンを用いた相互協力運用型のセキュアストレージ</li>
+                    </ol>
+                    などに携わってきました.
+                </p>
+
+                <h2 class="border-bottom" id="about">暗号方式の理論的安全性証明</h2>
+                <p>
+                    暗号技術を開発する場合, 「数学的に安全性を証明する」ことが主流となっています.
+                    この安全性証明は容易ではなく, 時に理想的な条件下で証明されることがあります.
+                    そこで, この理想的な条件をどれがけ緩和できるか, またはどれだけ緩和すると安全性証明ができなくなるかについて研究しています.
+                </p>
+                <p>
+                    教員本人は, Schnorr署名と呼ばれる署名やその一般系のFiat-Shamir型の署名の安全性証明について主に研究しています.
+                </p>
+                
+                <h2 class="border-bottom" id="about">暗号方式の理論的安全性証明</h2>
+                <p>
+                    暗号技術を開発する場合, 「数学的に安全性を証明する」ことが主流となっています.
+                    この安全性証明は容易ではなく, 時に理想的な条件下で証明されることがあります.
+                    そこで, この理想的な条件をどれがけ緩和できるか, またはどれだけ緩和すると安全性証明ができなくなるかについて研究しています.
+                </p>
+                <p>
+                    教員本人は, Schnorr署名と呼ばれる署名やその一般系のFiat-Shamir型の署名の安全性証明について主に研究しています.
+                </p>
+            </div>
+
+            <div class="col-md-4 float-none">
+                <div class="position-fixed">
+                    <h5>目次</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
