@@ -6,6 +6,10 @@ const prof_contents = {
             title: "Profile",
             blocks: [
                 {
+                    type: "image",
+                    filename: "IMAG0573.jpg"
+                },
+                {
                     type: "list",
                     items: [
                     "福光 正幸 (Fukumitsu, Masayuki)",
@@ -49,6 +53,17 @@ const prof_contents = {
                     type: "bib",
                     id: "non_peer_reviewed",
                     filename: "non_peer_reviewed.bib"
+                }
+            ]
+        },
+        {
+            id: "awards",
+            title: "Awards",
+            blocks: [
+                {
+                    type: "ext-list",
+                    filename: "awards.json",
+                    parser: (item) => `${item.title} \t(${item.year})`
                 }
             ]
         },

@@ -36,7 +36,7 @@
         </div>
 
         <b-container>
-            <b-row>
+            <b-row class="contents">
                 <b-col md="9" id="sections">
                     <h1>{{contents.title}}</h1>
                     <bv-section v-for="sect in contents.sections" :id="sect.id" :sections="sect"></bv-section>

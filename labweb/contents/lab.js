@@ -31,7 +31,15 @@ const lab_contents = {
                 `,
                 `
                 ちなみに, これまでにマルチ署名やグループ署名の開発を行ってきました.
-                `
+                `,
+                {
+                    type: "thumbs",
+                    imgs: [
+                        {filename: "musig.png"},
+                        {filename: "provsec1.png"},
+                        {filename: "provsec2.png"}
+                    ]
+                }
             ]
         },
         {
@@ -63,7 +71,11 @@ const lab_contents = {
                 `,
                 `
                 教員本人は, Schnorr署名と呼ばれる署名やその一般系のFiat-Shamir型の署名の安全性証明について主に研究しています.
-                `
+                `,
+                {
+                    type: "image",
+                    filename: "scis2022.png"
+                }
             ]
         },
     ]
