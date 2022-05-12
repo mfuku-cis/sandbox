@@ -1,9 +1,10 @@
 const prof_contents = {
+    id: "profile",
     title: "Masayuki Fukumitsu",
     sections: [
         {
-            id: "profile",
-            title: "Profile",
+            id: "about_fuku",
+            title: "About Fukumitsu",
             blocks: [
                 {
                     type: "image",
@@ -29,6 +30,20 @@ const prof_contents = {
                     type: "ext-list",
                     filename: "biography.json",
                     parser: (item) => `${item.head} \t: ${item.body}`
+                }
+            ]
+        },
+        {
+            id: "courses",
+            title: "Courses",
+            blocks: [
+                `
+                    専門演習・卒業論文以外の現在の担当科目
+                `,
+                {
+                    type: "ext-list",
+                    filename: "courses.json",
+                    parser: (item) => `${item.name} \t (${item.terms})`
                 }
             ]
         },

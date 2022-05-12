@@ -1,4 +1,5 @@
 const lab_contents = {
+    id: "lab",
     title: "FukuLab",
     sections: [
         {
