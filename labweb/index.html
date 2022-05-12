@@ -19,6 +19,12 @@
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
     <!-- Load the following for BootstrapVueIcons support -->
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+
+    <!-- Vue Router -->
+    <script src="https://unpkg.com/vue-router@3.5.3/dist/vue-router.js"></script>
+
+    <!-- Vue Loader -->
+    <script src="https://unpkg.com/http-vue-loader"></script>
     
     <link type="text/css" rel="stylesheet" href="./fukulab.css">
     <title>SUN FukuLab</title>
@@ -29,36 +35,22 @@
             <b-navbar variant="light" type="light">
                 <b-navbar-brand>SUN FukuLab</b-navbar-brand>
                 <b-navbar-nav>
-                    <b-nav-item href="./">Home</b-nav-item>
-                    <b-nav-item href="./?prof">Profile</b-nav-item>
+                    <b-nav-item to="lab">Home</b-nav-item>
+                    <b-nav-item to="profile">Profile</b-nav-item>
                 </b-navbar-nav>
             </b-navbar>
         </div>
 
         <b-container>
-            <b-row class="contents">
-                <b-col md="9" id="sections">
-                    <h1>{{contents.title}}</h1>
-                    <bv-section v-for="sect in contents.sections" :id="sect.id" :sections="sect"></bv-section>
-                </b-col>
-
-                <b-col md="3" id="toc">
-                    <div class="position-fixed">
-                        <h5>ToC</h5>
-                        <b-nav :vertical="true">
-                            <b-nav-item v-for="sect in contents.sections" :id="`to_${sect.id}`"  :href="`#${sect.id}`">{{sect.title}}</b-nav-item>
-                        </b-nav>
-                    </div>
-                </b-col>
-            </b-row>
+            <router-view></router-view>
         </b-container>
     </div>
 
     <script src="./lib/bibtexParse.js"></script>
     <script src="./js/bibtexutil.js"></script>
+    <script src="./js/viewutil.js"></script>
     <script src="./contents/lab.js"></script>
     <script src="./contents/profile.js"></script>
-    <script src="./vue/components.js"></script>
     <script src="./vue/app.js"></script>
 </body>
 </html>

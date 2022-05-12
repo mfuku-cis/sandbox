@@ -27,14 +27,6 @@ div.contents {
     margin-bottom: 3rem;
 }
 
-ul.profile-items {
-    list-style-type: none;
-}
-
 .image-frame {
     margin: 5rem;
-}
-
-.recent {
-    margin-bottom: 0;
 }
