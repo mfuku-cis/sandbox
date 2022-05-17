@@ -83,6 +83,31 @@ const prof_contents = {
             ]
         },
         {
+            id: "garally",
+            title: "Photo Garally",
+            blocks: [
+                {
+                    type: "thumbs",
+                    imgs: [
+                        {filename: "garally/4Y4NseOtKz4BoX.jpg"},
+                        {filename: "garally/NPhW8iU3ad8OFy.jpg"},
+                        {filename: "garally/DSC_0326.JPG"},
+                        {filename: "garally/IMG_3064.JPG"},
+                        {filename: "garally/aHx9wDFE4QUps9.jpg"}
+                    ]
+                },
+                {
+                    type: "thumbs",
+                    imgs: [
+                        {filename: "garally/DSC_0092.JPG"},
+                        {filename: "garally/DSC_0426.JPG"},
+                        {filename: "garally/DSC_0149.JPG"},
+                        {filename: "garally/DSC_0048.JPG"}
+                    ]
+                }
+            ]
+        },
+        {
             id: "links",
             title: "Links",
             blocks: [
