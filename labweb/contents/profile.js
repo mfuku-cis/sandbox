@@ -62,7 +62,7 @@ const prof_contents = {
                 },
                 {
                     type: "subsect",
-                    title: "Non Peer-Reviewed"
+                    title: "Non Peer-Reviewed and Memoirs"
                 },
                 {
                     type: "bib",
