@@ -102,7 +102,8 @@ const prof_contents = {
                         {filename: "garally/DSC_0092.JPG"},
                         {filename: "garally/DSC_0426.JPG"},
                         {filename: "garally/DSC_0149.JPG"},
-                        {filename: "garally/DSC_0048.JPG"}
+                        {filename: "garally/DSC_0048.JPG"},
+                        {filename: "garally/sendai.jpg"}
                     ]
                 }
             ]
