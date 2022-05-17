@@ -92,12 +92,7 @@ const prof_contents = {
                         {filename: "garally/4Y4NseOtKz4BoX.jpg"},
                         {filename: "garally/NPhW8iU3ad8OFy.jpg"},
                         {filename: "garally/DSC_0326.JPG"},
-                        {filename: "garally/IMG_3064.JPG"}
-                    ]
-                },
-                {
-                    type: "thumbs",
-                    imgs: [
+                        {filename: "garally/IMG_3064.JPG"},
                         {filename: "garally/DSC_0092.JPG"},
                         {filename: "garally/DSC_0426.JPG"},
                         {filename: "garally/DSC_0149.JPG"},
