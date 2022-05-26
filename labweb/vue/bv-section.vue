@@ -23,6 +23,9 @@
                 <div v-else-if="blc.type == 'image'" class="image-frame">
                     <b-img :src="imgpath(blc.filename)" fluid-grow rounded></b-img>
                 </div>
+                <div v-else-if="blc.type == 'cards'">
+                    <bv-section-cards :cards="blc.cards"></bv-section-cards>
+                </div>
                 <p v-else-if="blc.type == 'inside_calender'">
                     <bv-inside-section-gcal></bv-inside-section-gcal> 
                 </p>
@@ -47,7 +50,8 @@ module.exports = {
         "bv-section-bib": httpVueLoader("./bv-section-ext-bib.vue"),
         "bv-section-links": httpVueLoader("./bv-section-links.vue"),
         "bv-section-thumbs": httpVueLoader("./bv-section-thumbs.vue"),
-        "bv-inside-section-gcal": httpVueLoader("./bv-inside-section-gcal.vue")
+        "bv-inside-section-gcal": httpVueLoader("./bv-inside-section-gcal.vue"),
+        "bv-section-cards": httpVueLoader("./bv-section-cards.vue")
     },
     methods: {
         imgpath: imgpath
